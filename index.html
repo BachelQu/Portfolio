@@ -4,10 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quentin Bacheley Portfolio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+    <header>
+        <div class="boxed">
+            <div class="flex aligncenter space-between">
+                <button onclick="openMenu()" class="header-menu-mobile">
+                    <span class="material-icons">menu</span>
+                </button>
+                <a href="#" class="header-logo">
+                    <img src="images/discorde.png" alt="mon logo">
+                </a>
+                <ul class="header-menu">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">Compétences</a></li>
+                    <li><a href="#">Réalisations</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
     <div class="slider">
         <img src="images/slider.jpg" class="slider-background" alt="Image bureau sombre">
         <div class="slider-content">
@@ -18,11 +38,11 @@
 
     <div class="section">
         <div class="boxed">
-            <div class="flex">
-                <div class="w40">
+            <div class="flex toColumn mCenter">
+                <div class="w40 wm100">
                     <h2>À propos de moi</h2>
                 </div>
-                <div class="w60">
+                <div class="w60 wm100">
                     <p>Anciennement technicien de laboratoire, j'ai décidé d'une reconvertion professionnelle à l'âge de 28 ans. Attiré depuis toujours par la technologie je rêve du futur.</p>
                 </div>
             </div>
@@ -30,15 +50,73 @@
         <div class="section dark">
             <div class="boxed text-center">
                 <h2>Découvrez mes compétences</h2>
-                <div class="flex">
-                    <div class="w33 skill">
+                <div class="flex toColumn gap20">
+                    <div class="w33 wm100 skill">
                         <img src="images/HTML5_logo_and_wordmark.svg.png" alt="Logo HTML 5">
                         <h3>HTML</h3>
+                    </div>
+                    <div class="w33 wm100 skill">
+                        <img src="images/CSS3_logo_and_wordmark.svg.png" alt="Logo CSS 3">
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="w33 wm100 skill">
+                        <img src="images/javascript-logo-javascript-icon-transparent-free-png.webp" alt="Logo JavaScript">
+                        <h3>JavaScript</h3>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <div class="section">
+        <div class="boxed text-center">
+            <h2>Mes réalisations</h2>
+            <div class="flex space-between">
+                <div class="w32 realisation">
+                    <a href="#">
+                    <img src="images/slider.jpg" alt="CV">
+                    <h3>Mon CV</h3>
+                    </a>
+                </div>
+                <div class="w32 realisation">
+                    <a href="#">
+                    <img src="images/slider.jpg" alt="cahier des charges">
+                    <h3>Cahier des charges</h3>
+                    </a>
+                </div>
+                <div class="w32 realisation">
+                    <a href="#">
+                    <img src="images/slider.jpg" alt="dynamiser un espace commentaire">
+                    <h3>Espace commentaire dynamisé</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section dark">
+        <div class="boxed text-center">
+            <h2>Contactez-moi</h2>
+            <div class="flex space-between">
+                <div class="w32">
+                    <div class="icon">
+                        <img src="images/e-mail.png" alt="logo e-mail">
+                    </div>
+                    <span class="label">E-mail</span>
+                </div>
+                <div class="w32">
+                    <div class="icon">
+                        <img src="images/sociale.png" alt="logo WhatsApp">
+                    </div>
+                    <span class="label">WhatsApp</span>
+                </div>
+                <div class="w32">
+                    <div class="icon">
+                        <img src="images/discorde.png" alt="logo discord">
+                    </div>
+                    <span class="label">Discord</span>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="app.js"></script>
 </body>
 </html>
