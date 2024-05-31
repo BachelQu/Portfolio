@@ -16,18 +16,19 @@
                     <span class="material-icons">menu</span>
                 </button>
                 <a href="#" class="header-logo">
-                    <img src="images/discorde.png" alt="mon logo">
+                    <img src="images/Logo WebMinds Dev.png" alt="mon logo">
                 </a>
-                <ul class="header-menu">
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">A propos</a></li>
-                    <li><a href="#">Compétences</a></li>
-                    <li><a href="#">Réalisations</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+                <nav class="header-menu">
+                    <a href="#accueil" class="active">Accueil</a>
+                    <a href="#aPropos">À propos</a>
+                    <a href="#competences">Compétences</a>
+                    <a href="#realisations">Réalisations</a>
+                    <a href="#contact">Contact</a>
+                </nav>
             </div>
         </div>
     </header>
+<section id="accueil">
     <div class="slider">
         <img src="images/slider.jpg" class="slider-background" alt="Image bureau sombre">
         <div class="slider-content">
@@ -35,7 +36,8 @@
         <p>Je suis en formation pour devenir développeur web full-stack</p>
         </div>
     </div>
-
+</section>
+<section id="aPropos">
     <div class="section">
         <div class="boxed">
             <div class="flex toColumn mCenter">
@@ -43,10 +45,12 @@
                     <h2>À propos de moi</h2>
                 </div>
                 <div class="w60 wm100">
-                    <p>Anciennement technicien de laboratoire, j'ai décidé d'une reconvertion professionnelle à l'âge de 28 ans. Attiré depuis toujours par la technologie je rêve du futur.</p>
+                    <p>Anciennement technicien de laboratoire, j'ai décidé d'une reconvertion professionnelle à l'âge de 28 ans.</p>
                 </div>
             </div>
         </div>
+</section>
+<section id="competences">
         <div class="section dark">
             <div class="boxed text-center">
                 <h2>Découvrez mes compétences</h2>
@@ -67,6 +71,8 @@
             </div>
         </div>
     </div>
+</section>
+<section id="realisations">
     <div class="section">
         <div class="boxed text-center">
             <h2>Mes réalisations</h2>
@@ -92,13 +98,17 @@
             </div>
         </div>
     </div>
+</section>
+<section id="contact">
     <div class="section dark">
         <div class="boxed text-center">
             <h2>Contactez-moi</h2>
             <div class="flex space-between">
                 <div class="w32">
                     <div class="icon">
-                        <img src="images/e-mail.png" alt="logo e-mail">
+                        <a href="mailto:quentin.bacheley@live.fr">
+                        <img src="images/e-mail-2.png" alt="logo e-mail">
+                        </a>
                     </div>
                     <span class="label">E-mail</span>
                 </div>
@@ -111,12 +121,25 @@
                 <div class="w32">
                     <div class="icon">
                         <img src="images/discorde.png" alt="logo discord">
+                        <button class="linkDiscord" onclick="copyToClipboard()">Cliquez ici pour copier mon Discord</button>
                     </div>
                     <span class="label">Discord</span>
+                </div>
+                <div class="w32">
+                    <div class="icon">
+                        <a href="www.linkedin.com/in/quentin-bacheley-3012b3146">
+                        <img src="images/linkedin.png" alt="logo LinkedIn">
+                        </a>
+                    </div>
+                    <span class="label">LinkedIn</span>
                 </div>
             </div>
         </div>
     </div>
+</section>
+    <footer>
+
+    </footer>
 <script src="app.js"></script>
 </body>
 </html>

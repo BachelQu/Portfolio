@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 body{
     font-family:'Inter', sans-serif;
@@ -160,9 +161,7 @@ p{
 .icon{
     display: flex;
     align-items: center;
-    background-color: #fff;
     width: fit-content;
-    border-radius: 50%;
 }
 
 .icon img{
@@ -191,10 +190,10 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    background: #fff;
+    background: #000;
     z-index: 999;
     padding-block: 10px;
-    box-shadow: 1px 1px  25px rgba(0,0,0,0.7);
+    box-shadow: 1px 1px  25px rgba(255, 255, 255, 0.7);
 }
 
 .header-logo{
@@ -202,7 +201,7 @@ header{
 }
 
 .header-logo img{
-    width: 50px;
+    width: 90px;
 }
 
 .header-menu{
@@ -211,22 +210,32 @@ header{
     list-style: none;
 }
 
-.header-menu li a{
+nav a{
     text-decoration: none;
-    color: #000;
+    color: #FFF;
     display: block;
     padding: 10px 20px;
     box-sizing: border-box;
     transition: .2s ease;
 }
 
-.header-menu li a:hover{
-    background-color: #1c1e20;
-    color: #fff;
+nav a:hover,
+nav a.active {
+    background-color: #FFF;
+    color: #000;
 }
 
 .header-menu-mobile{
     display: none;
+}
+
+.linkDiscord{
+    opacity: 0%;
+}
+
+.linkDiscord:hover{
+    opacity: 100%;
+    transition: .4s ease;
 }
 
 @media (max-width:810px){
