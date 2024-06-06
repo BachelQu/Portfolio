@@ -40,9 +40,16 @@ h2{
     margin-bottom: 100px;
 }
 
+.photo-noir-blanc{
+    height: 500px;
+    position: relative;
+    border: 3px solid black;
+}
+
 p{
     font-size: 1.5rem;
     line-height: 1.5em;
+    margin-top: 20%;
 }
 
 .slider-content p{
@@ -252,13 +259,17 @@ nav a.active {
         z-index: 991;
     }
 
+    .header-logo img{
+        width: 60px;
+    }
+
     .header-menu{
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100vh;
-        background: #fff;
+        background: #000;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -269,12 +280,13 @@ nav a.active {
     .header-menu-mobile{
         display: block;
         border: 0px;
-        background-color: #fff;
+        background-color: #000;
         position: absolute;
         left: 5%;
         top: 50%;
         transform: translateY(-50%);
         z-index: 991;
+        color: #FFF;
     }
 
     .active{
