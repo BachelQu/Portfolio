@@ -35,9 +35,19 @@ h1{
     font-size:5rem;
 }
 
+h1:hover{
+    color: #BA8437;
+    transition: .7s ease;
+}
+
 h2{
     font-size: 3rem;
     margin-bottom: 100px;
+}
+
+h2:hover{
+    color: #BA8437;
+    transition: .7s ease;
 }
 
 .photo-noir-blanc{
@@ -228,7 +238,7 @@ nav a{
 
 nav a:hover,
 nav a.active {
-    background-color: #FFF;
+    background-color: #BA8437;
     color: #000;
 }
 
